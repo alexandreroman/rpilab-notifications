@@ -45,7 +45,6 @@ func handleAlert(w http.ResponseWriter, req *http.Request) {
 	case "ReconciliationSucceeded":
 		{
 			triggerStatusReady()
-
 		}
 	case "ReconciliationFailed", "BuildFailed":
 		{
