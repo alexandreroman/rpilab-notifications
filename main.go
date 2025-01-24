@@ -80,9 +80,9 @@ func callBlink1Server(color string, blink bool) error {
 	params.Add("color", color)
 	if blink {
 		base_url = blink1ServerUrl + "/blink"
-		params.Add("repeat", "5")
+		params.Add("repeat", "10")
 	} else {
-		params.Add("delay", "1")
+		params.Add("delay", "2")
 	}
 	url := fmt.Sprintf("%s?%s", base_url, params.Encode())
 
